@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 28, 2023 at 01:31 PM
+-- Generation Time: May 29, 2023 at 07:17 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -34,7 +34,8 @@ CREATE TABLE `koleksi` (
   `jumlah_eksemplar` mediumint(9) NOT NULL DEFAULT 0,
   `Penerbit` varchar(200) DEFAULT NULL,
   `penulis` varchar(200) NOT NULL,
-  `status_koleksi` enum('Tersedia','Tidak Tersedia','Tersedia tetapi tidak bisa dipinjam') NOT NULL
+  `status_koleksi` enum('Tersedia','Tidak Tersedia','Tersedia tetapi tidak bisa dipinjam') NOT NULL,
+  `jenis_koleksi` enum('Buku','koran','karya ilmiah','prosiding') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -48,6 +49,7 @@ ALTER TABLE `koleksi`
   ADD PRIMARY KEY (`DDC`),
   ADD UNIQUE KEY `DDC` (`DDC`);
 ALTER TABLE `koleksi` ADD FULLTEXT KEY `koleks_search` (`judul`);
+ALTER TABLE `koleksi` ADD FULLTEXT KEY `koleksi_search` (`deskripsi_koleksi`,`Penerbit`,`penulis`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
