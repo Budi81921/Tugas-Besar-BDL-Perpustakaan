@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'satoshi reguler', 'satoshi' ;
+}
+h1{
+    font-size: 18px;
+    font-weight: semi-bold;
+
+}
+
+body{
+    background-color: #E8E8E8;
+}
+
+.isinav li{
+    list-style: none;
+}
+
+.isinav li a{
+    list-style: none;
+    text-decoration: none;
+    color: rgba(0,0,0,.7);
+    font-size: 18px ;
+    font-weight: bold;
+}
+
+.isinav li a:hover{
+    color:#2184E0;
+ 
+}
+
+/*header*/
+header{
+    background-color:#FFFFFF;
+    position:relative;
+    padding : 0 2rem;
+    box-shadow: 0px 4px 4px rgba(0,0,0,.2) ;   
+}
+
+.tooglebutton{
+    margin-top: 1;
+}
+.navbar{
+    width:90%;
+    height : 98px;
+    margin: 0 auto;
+    display : flex;
+    align-items : center;
+    justify-content: space-between;
+}
+
+.navbar .isinav {
+    display: flex;
+    gap: 5rem;
+}
+.logo{
+    margin-left: 300px;
+}
+
+/*Navigation Link*/
+.backbutton i{
+    color: rgba(0,0,0,.75);
+    margin-top: 5px;
+
+}
+.navlink{
+    width: 91px;
+    height : 98px;
+    margin: 0 auto;
+    display : flex;
+    align-items : center;
+    justify-content: space-between;   
+    margin-left: 104px;
+    gap : 1rem;
+}
+.navlink .isinavlink{
+    display: flex;
+    gap: 1rem;
+}
+.isinavlink li a{
+    list-style: none;
+    text-decoration: none;
+    color: rgba(0,0,0,.7);
+    font-size: 18px ;
+}
+.isinavlink li{
+    list-style: none;
+    text-decoration: none;
+    color: rgba(0,0,0,.7);
+    font-size: 18px ;
+}
+.isinav{
+    margin-right: 20px;
+}
+
+/* search bar*/
+.searchsec{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 55px;
+}
+.searchbar{
+    width: 450px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    border-radius:60px;
+    padding: 10px;
+}
+.searchbar input{
+    background: transparent;
+    flex:1;
+    border:0;
+    outline:none;
+    padding: 
+    font-size: 14px;
+    margin-left: 10px;
+}
+.searchbar button i{
+    width :28px;
+
+}
+.searchbar button{
+    border: 0;
+    border-radius: 50%;
+    width:28px;
+    height:26px;
+}
+
+/* jenis-Koleksi */
+.Jenis-k{
+    width: 207px;
+    height: 280px;
+    background-color: #FFFFFF;
+    display: inline-block;
+    border-radius: 15px;
+    margin-left: 104px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,.25) ;
+}
+.judul-k{
+    text-align: center;
+}
+.Jenis-k .judul-k{
+    color: #FFFFFF;
+    background-color: #2184E0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding:10px 20px
+}
+.Jenis-k ul{
+    position: relative;
+}
+.Jenis-k ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: 18px;
+    transition: transform 0.5s;
+}
+
+.Jenis-k ul:hover li {
+    opacity:0.2;
+
+}
+.Jenis-k ul li:hover{
+    transform: scale(1.1);
+    background-color:#2184E0;
+    color: #FFFFFF;
+    opacity: 1;
+}
+.Jenis-k ul li:active selector{
+    background-color: #2184E0;
+    color: #FFFFFF;
+}
+
+/*Section 1*/
+.sect-b-1{
+    margin-bottom: 20px;
+    width: 339px;
+    background-color: #FFFFFF;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 52px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,.25) ;
+}
+
+/*isiitem1*/
+.item-1{
+    width: 344px;
+    height: 96;
+    padding:10px 20px;
+
+}
+.gambar-1{
+    width:65px;
+    height: 96px; 
+    display: inline-block;
+}
+.isigambar-1{
+    width:65px;
+    height: 96px;
+    border-radius: 10px;
+    stroke:rgba(0,0,0,.25);
+}
+
+h3{
+    width: 200px;
+    color: #2184E0;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+   
+}
+hr{
+    margin-top: 8px;
+    display: inline-block;
+    vertical-align: top;
+    width: 188px;
+    
+
+}
+.isiitem-1{
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 17px;
+}
+.isiitem-1 ul li {
+    margin-bottom: 5px; 
+    list-style: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(0,0,0,.65);
+}
+.isiitem-1 ul li a  {
+    font-size: 12px;
+    font-weight: medium;    
+    color: rgba(0,0,0,.45);
+    margin-left: 120px;
+}
+
+
+/* section-2 */
+.sect-b-2{
+    margin-bottom: 20px;
+    width: 339px;
+    background-color: #FFFFFF;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 52px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,.25) ;
+}
+
+
+.slider{
+    display: inline-block;
+    vertical-align: top;
+    width: 786,44px;
+}
