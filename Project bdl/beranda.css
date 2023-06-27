@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'satoshi reguler', 'satoshi' ;
+}
+h1{
+    font-size: 18px;
+    font-weight: semi-bold;
+
+}
+
+body{
+    background-color: #E8E8E8;
+}
+
+.isinav li{
+    list-style: none;
+}
+
+.isinav li a{
+    list-style: none;
+    text-decoration: none;
+    color: rgba(0,0,0,.7);
+    font-size: 18px ;
+    font-weight: bold;
+}
+
+.isinav li a:hover{
+    color:#2184E0;
+ 
+}
+
+/*header*/
+header{
+    background-color:#FFFFFF;
+    position:relative;
+    padding : 0 2rem;
+    box-shadow: 0px 4px 4px rgba(0,0,0,.2) ;   
+}
+
+.tooglebutton{
+    margin-top: 1;
+}
+.navbar{
+    width:90%;
+    height : 98px;
+    margin: 0 auto;
+    display : flex;
+    align-items : center;
+    justify-content: space-between;
+}
+
+.navbar .isinav {
+    display: flex;
+    gap: 5rem;
+}
+.logo{
+    margin-left: 300px;
+}
+
+/*Section landing page*/
+.page1{
+    background-size: cover;
+    background-image: url(Fotobackground.png);
+    background-repeat:no-repeat ;
+    height: 470px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,.2);
+}
+.isipage1{
+    height: 272px;
+    width: 600px;
+    border-radius: 15px;
+    background-color: rgba(217,217,217,.14);
+    display: inline-block;
+    margin-top: 140px;
+    margin-left: 120px;
+    color: #FFFFFF;
+}
+.isipage1 h1{
+    margin-left: 25px;
+    margin-top: 50px;
+    font-size: 64px;
+}
+.isipage1 h2{
+    margin-left: 25px;
+    font-size: 40px;
+}
+.login{
+    margin-top: 15px;
+    margin-left: 25px;
+    width: 183px;
+    height: 47px;
+    padding: 10px 20px;
+    background-color: #2184E0;
+    color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+    border: none;
+    
+
+}
+.login a{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+    font-family:'satoshi reguler', 'satoshi';
+    text-decoration: none;
+    text-align: center;
+}
+
+/*landing page 2 */
+.page2{
+    height: 32px;
+    margin-left: 100px;
+    margin-top: 45px;
+    color:#2184E0;
+    font-size: 28px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+.Judulpage2{
+    display: inline-block;
+    vertical-align: top;
+}
+
+hr{
+    width: 931px;
+    color: #2184E0;
+}
+.garis{
+    margin-left: 8px;
+    height: 0px;
+    display: inline-block;
+    vertical-align: center;
+}
+
+/* landing page 3 */
+.covercarousel{
+    margin-top: 40px;
+    margin-left: 225px;
+    background-color: #FBFBFB;
+    width: 880px;
+    height: 386px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    position: relative;
+}
+.covercarousel i{
+    height: 50px;
+    width: 50px;
+    background-color: #FFFFFF;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+
+}
+.covercarousel i:first-child{
+    left: -22px; 
+}
+.covercarousel i:last-child{
+    right: -22px;
+}
+.carousel{
+    width: 796px;
+    height: 247px;
+}
+.covercarousel .carousel {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 78px;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: 0;
+}
+.carousel ::-webkit-scrollbar{
+    display: none;
+}
+.carousel.no-transition{
+    scroll-behavior: auto;
+}
+.carousel .dragging{
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+
+}
+.carousel .dragging .card{
+    cursor: grab;
+    user-select: none;
+}
+.carousel .card{
+    scroll-snap-align: start;
+    list-style: none;
+    background: #FFFFFF;
+    stroke: rgba(0,0,0,.25);
+    box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+    padding-bottom: 15px;
+    justify-content: center;
+    flex-direction: column;
+    width: 139px;
+    height: 242px;
+}
+
+.card {
+    object-fit: cover;
+}
+.card span{
+    font-size: 14px;
+    margin-left: 5px;
+}
+.card h2{
+    
+    font-size: 14px;
+    color: #2184E0;
+    margin-left: 5px;
+
+}
+.gambar1c img{
+    width: 139px;
+    height: 170px;
+}
+
+/* landing page 4 */
+.page4 {
+    margin-top: 78px;
+    height: 656px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+    background-color: #FFFFFF;
+
+}
+
+.judulguide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.judulguide h1 {
+    margin-top: 37px;
+    color: #2184E0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.judulguide h2 {
+    margin-top: 19px;
+    color: #2184E0;
+    text-align: center;
+    font-size: 28px;
+    font-weight: small;
+}
+
+.sectguide{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin-top: 90px;
+    gap :5rem;
+
+}
+.card1{
+    background-color: rgba(0, 0, 0, .65);
+    height: 353px;
+    width: 218px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+    overflow: hidden;
+    border: rgba(0, 0, 0, .24);
+    cursor:pointer;
+}
+.backgroundata{
+    width: 218px;
+    height: 177px;
+}
+
+.backgroundata .iconhelp{
+    display: inline-block;
+    margin-left: 169px;
+    width: 49px;
+    height: 40px;
+    background-color: #FFFFFF;
+    border: rgba(0, 0, 0, .34);
+}
+.iconhelp i{
+    padding:15px 20px
+}
+.backgroundata h1{
+    margin-top: 59px;
+    margin-left: 15px;
+    color: #FFFFFF;
+    font-size: 25px;
+}
+
+.isi{
+    width: 218px;
+    height: 178px;
+    background-color: #FFFFFF;
+}
+.isi p {
+  padding: 10px 15px;
+}
+
+
+
+
+
