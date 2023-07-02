@@ -2,7 +2,7 @@
 <html lang="Indonesia">
 <head>
     <title>Koleksi</title>
-    <link rel="stylesheet" href="{{ asset('Koleksi.css') }"/>
+    <link rel="stylesheet" href="{{ asset('Koleksi.css')}}"/>
     <link href="https://www.fontshare.com/fonts/satoshi">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel ="stylesheet">
@@ -39,6 +39,7 @@
     </nav>
     <section>
         <div class="section1">
+            @foreach ($koleksis as $koleksi)
             <img class="buku" src="data:image/png;base64,{{ chunk_split(base64_encode($koleksi->cover_koleksi)) }}" alt= 'Filsafat' width=273.66px height=417px/>
         </div>
         <div class="section2">
@@ -69,6 +70,7 @@
                     </a>
                 </button>
             </div>
+        @endforeach
         </div>
     </section>
 </body>
