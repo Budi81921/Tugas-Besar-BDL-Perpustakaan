@@ -56,21 +56,16 @@
             <p class ="Deskripsi_txt">
                 {{$koleksi->deskripsi_koleksi}}
             </p>
-            <div class="tombol-koleksi">
+           <div class="tombol-koleksi">
                 <button class ="tambah-chart">
-                    <a href="">
                     <i class="fa-solid fa-cart-plus" style="color: #ffffff;"></i>
                     <p class ="k-1">Keranjang</p>
-                    </a>
                 </button>
                 <button class ="pinjam-chart">
-                    <a href="{{ url('/cart/tambah/'.$koleksi->id) }}">
-                    <i class="fa-solid fa-circle-check" style="color: #ffffff;">
+                    <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
                     Pinjam
-                    </a>
-                </button>
+                </button>
             </div>
-        @endforeach
         </div>
     </section>
 </body>
