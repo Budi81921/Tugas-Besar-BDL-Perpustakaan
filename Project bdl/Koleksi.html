@@ -46,32 +46,30 @@
                 <h1 class ="Judul">{{$koleksi->judul_koleksi}}</h1>
                 <hr class="garis">
             </div>
-           <ul class ="Biodatabuku">
+            <ul class ="Biodatabuku">
                 <li>{{$koleksi->penulis}}</li>
                 <li>Status :  {{$koleksi->status_koleksi}}</li>
                 <li>{{$koleksi->jumlah_eksemplar}}</li>
-           </ul>
+            </ul>
             <h2 class ="Deskripsi">Deskripsi</h2>
             <p class ="Deskripsi_txt">
                 {{$koleksi->deskripsi_koleksi}}
             </p>
             <div class="tombol-koleksi">
-                <div class="tombol-koleksi">
-        <a href="">
-            <button class ="tambah-chart">
-                <i class="fa-solid fa-cart-plus" style="color: #ffffff;"></i>
-                <p class ="k-1">Keranjang</p>
-        </a>
-        </button>
-        <button class ="pinjam-chart">
-            <a href="{{ url('/cart/tambah/'.$koleksi->id) }}">
-                <i class="fa-solid fa-circle-check" style="color: #ffffff;">
-                Pinjam
-            </a>
-        </button>
+                <button class ="tambah-chart">
+                    <a href="">
+                    <i class="fa-solid fa-cart-plus" style="color: #ffffff;"></i>
+                    <p class ="k-1">Keranjang</p>
+                    </a>
+                </button>
+                <button class ="pinjam-chart">
+                    <a href="{{ url('/cart/tambah/'.$koleksi->id) }}">
+                    <i class="fa-solid fa-circle-check" style="color: #ffffff;">
+                    Pinjam
+                    </a>
+                </button>
             </div>
         </div>
-
     </section>
 </body>
 </html>
