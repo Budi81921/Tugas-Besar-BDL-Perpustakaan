@@ -2,7 +2,7 @@
 <html lang="Indonesia">
 <head>
     <title>Koleksi</title>
-    <link rel="stylesheet" href="Koleksi.css"/>
+    <link rel="stylesheet" href="{{ asset('Koleksi.css') }"/>
     <link href="https://www.fontshare.com/fonts/satoshi">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel ="stylesheet">
@@ -15,11 +15,11 @@
                 <i class="fa-solid fa-bars" width = 25px></i>
             </div>
             <div class="logo">
-                <img src = "logouai.png" width = 509px/>
+                <img src = "{{asset('logouai.png')}}" width = 509px/>
             </div>
             <ul class="isinav">
-                <li><a href="Beranda">Beranda</a></li>
-                <li><a href="Koleksi">Koleksi</a></li>
+                <li><a href="{{ url('/home') }}">Beranda</a></li>
+                <li><a href="{{ url('/koleksi') }}">Koleksi</a></li>
             </ul>
         </div>
     </header>
@@ -39,35 +39,36 @@
     </nav>
     <section>
         <div class="section1">
-            <img class="buku" src="OIP.png" alt= 'Filsafat' width=273.66px height=417px/>
+            <img class="buku" src="data:image/png;base64,{{ chunk_split(base64_encode($koleksi->cover_koleksi)) }}" alt= 'Filsafat' width=273.66px height=417px/>
         </div>
         <div class="section2">
             <div class ="description">
-                <h1 class ="Judul">Filsafat Agama Islam</h1>
+                <h1 class ="Judul">{{$koleksi->judul_koleksi}}</h1>
                 <hr class="garis">
             </div>
            <ul class ="Biodatabuku">
-                <li>James Arthur</li>
-                <li>Status : Tersedia</li>
-                <li>525 eksemplar</li>
+                <li>{{$koleksi->penulis}}</li>
+                <li>Status :  {{$koleksi->status_koleksi}}</li>
+                <li>{{$koleksi->jumlah_eksemplar}}</li>
            </ul>
             <h2 class ="Deskripsi">Deskripsi</h2>
             <p class ="Deskripsi_txt">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,<br> 
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                {{$koleksi->deskripsi_koleksi}}
             </p>
             <div class="tombol-koleksi">
-                <button class ="tambah-chart">
-                    <i class="fa-solid fa-cart-plus" style="color: #ffffff;"></i>
-                    <p class ="k-1">Keranjang</p>
-                </button>
-                <button class ="pinjam-chart">
-                    <i class="fa-solid fa-circle-check" style="color: #ffffff;"></i>
-                    Pinjam
-                </button>
+                <div class="tombol-koleksi">
+        <a href="">
+            <button class ="tambah-chart">
+                <i class="fa-solid fa-cart-plus" style="color: #ffffff;"></i>
+                <p class ="k-1">Keranjang</p>
+        </a>
+        </button>
+        <button class ="pinjam-chart">
+            <a href="{{ url('/cart/tambah/'.$koleksi->id) }}">
+                <i class="fa-solid fa-circle-check" style="color: #ffffff;">
+                Pinjam
+            </a>
+        </button>
             </div>
         </div>
 
