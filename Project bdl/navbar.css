@@ -16,7 +16,6 @@ body{
 
 /*header 1*/
 header{
-    position: absolute;
     width: 100%;
     min-height: 98px;
     background-color: #FFFF;
@@ -52,7 +51,7 @@ header ul li a:hover{
     transform: smooth;
 }
 
-i{
+.menu-toggle-1 ul li i{
     margin-left:10px;
     margin-top: 2px;
 }
