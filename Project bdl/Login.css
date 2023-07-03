@@ -10,7 +10,7 @@
 .tampilan-l img{
     width:400px;
     height: 200px;
-    float: left;
+
     position: absolute;
     top: 0px;
     left: 0px;
@@ -33,11 +33,12 @@ body{
 .container{
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 850px;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5) ;
-    margin-left: -500px;
 }
 
 .login{
