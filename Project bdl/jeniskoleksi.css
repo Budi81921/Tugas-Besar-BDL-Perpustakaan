@@ -28,7 +28,7 @@ body{
 
 .isinav li a:hover{
     color:#2184E0;
- 
+
 }
 
 /*header*/
@@ -36,7 +36,7 @@ header{
     background-color:#FFFFFF;
     position:relative;
     padding : 0 2rem;
-    box-shadow: 0px 4px 4px rgba(0,0,0,.2) ;   
+    box-shadow: 0px 4px 4px rgba(0,0,0,.2) ;
 }
 
 .tooglebutton{
@@ -71,7 +71,7 @@ header{
     margin: 0 auto;
     display : flex;
     align-items : center;
-    justify-content: space-between;   
+    justify-content: space-between;
     margin-left: 104px;
     gap : 1rem;
 }
@@ -97,12 +97,14 @@ header{
 
 /* search bar*/
 .searchsec{
+    vertical-align: top;
     display: inline-block;
     justify-content: center;
     align-items: center;
     margin-left: 55px;
 }
 .searchbar{
+
     width: 450px;
     background: #FFFFFF;
     display: flex;
@@ -115,7 +117,6 @@ header{
     flex:1;
     border:0;
     outline:none;
-    padding: 
     font-size: 14px;
     margin-left: 10px;
 }
@@ -201,7 +202,7 @@ header{
 }
 .gambar-1{
     width:65px;
-    height: 96px; 
+    height: 96px;
     display: inline-block;
 }
 .isigambar-1{
@@ -218,14 +219,14 @@ h3{
     font-weight: bold;
     display: inline-block;
     vertical-align: top;
-   
+
 }
 hr{
     margin-top: 8px;
     display: inline-block;
     vertical-align: top;
     width: 188px;
-    
+
 
 }
 .isiitem-1{
@@ -235,7 +236,7 @@ hr{
     padding: 5px 17px;
 }
 .isiitem-1 ul li {
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
     list-style: none;
     font-size: 12px;
     font-weight: bold;
@@ -243,7 +244,7 @@ hr{
 }
 .isiitem-1 ul li a  {
     font-size: 12px;
-    font-weight: medium;    
+    font-weight: medium;
     color: rgba(0,0,0,.45);
     margin-left: 120px;
 }
