@@ -179,10 +179,13 @@ header{
 /*Section 1*/
 .sect-b-1{
     margin-bottom: 20px;
-    width: 339px;
+    width: 720px;
     background-color: #FFFFFF;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content:center;
     vertical-align: top;
+    flex-wrap: wrap;
     margin-left: 52px;
     border-radius: 15px;
     box-shadow: 0px 4px 4px rgba(0,0,0,.25) ;
@@ -190,9 +193,10 @@ header{
 
 /*isiitem1*/
 .item-1{
+    margin-top: 20px;
     width: 344px;
     height: 96;
-    padding:10px 20px;
+    padding: 10px 20px;
 
 }
 .gambar-1{
@@ -244,17 +248,10 @@ hr{
     margin-left: 120px;
 }
 
-
-/* section-2 */
-.sect-b-2{
-    margin-bottom: 20px;
-    width: 339px;
-    background-color: #FFFFFF;
+.slider{
     display: inline-block;
     vertical-align: top;
-    margin-left: 52px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 4px rgba(0,0,0,.25) ;
+    width: 786,44px;
 }
 
 
