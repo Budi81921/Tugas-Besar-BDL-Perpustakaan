@@ -176,7 +176,9 @@ header{
     background-color: #2184E0;
     color: #FFFFFF;
 }
-
+section{
+    display: flex;
+}
 /*Section 1*/
 .sect-b-1{
     margin-bottom: 20px;
@@ -249,15 +251,4 @@ hr{
     margin-left: 120px;
 }
 
-.slider{
-    display: inline-block;
-    vertical-align: top;
-    width: 786,44px;
-}
 
-
-.slider{
-    display: inline-block;
-    vertical-align: top;
-    width: 786,44px;
-}
