@@ -1,22 +1,4 @@
 /*tampilan Login*/
-
-.tampilan-l{
-    display: flex;
-    width: 20%;
-    max-width: 850px;
-
-}
-
-.tampilan-l img{
-    width:400px;
-    height: 200px;
-
-    position: absolute;
-    top: 0px;
-    left: 0px;
-
-}
-
 * {
     margin : 0;
     padding : 0;
@@ -29,13 +11,14 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-color: #e8e8e8;
 }
 .container{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 850px;
+    max-width: 750px;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5) ;
@@ -76,17 +59,19 @@ p{
 .open-popup{
 visibility: visible;
 }
-
+.right{
+    height: 478px;
+}
 .right img{
-    width: 450px;
+  
+    width: 350px;
     height: 100%;
     border-top-right-radius: 15px;
-    border-top-right-radius: 15px;
-
+    border-bottom-right-radius: 15px;
 }
 
 form label{
-    display: block;
+    display: flex;
     font-size: 16px;
     font-weight: 600;
     padding: 5px;
