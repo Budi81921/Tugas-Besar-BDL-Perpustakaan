@@ -1,86 +1,238 @@
-body{
-    margin-top:20px;
-    background-color: #ffffff;
+/* Css Nav Bar*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'satoshi reguler', 'satoshi' ;
 }
-.main{
-    padding: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+h1{
+    font-size: 18px;
+    font-weight: semi-bold;
+
+}
+
+body{
+    background-color: #E8E8E8;
+}
+
+/*header 1*/
+header{
+    width: 100%;
+    min-height: 98px;
+    background-color: #FFFF;
+    box-shadow: 0px,4px,4px, rgba(0,0,0,.25);
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgba(0,0,0,.70);
+    box-shadow: 0px 4px 4px rgba(0,0,0,.25) ; 
+}
+header ul{
+    position: relative;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+    float: left;
+}
+header ul li a{
+    color: rgba(0,0,0,.70);
+    font-size: 18px;
+    padding: 20px 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: left;
+}
+header ul li a:hover{
+    background-color:#2184E0 ;
+    color: #FFFF;
+    transform: smooth;
+}
+
+.menu-toggle-1 ul li i{
+    margin-left:10px;
+    margin-top: 2px;
+}
+header img{
+    width: 504px;
+    height: 61px;
+}
+.isi-user li a i{
+    padding-right: 5px;
+}
+.isi-user{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: #FFFF;
+    display: none;
+}
+header ul li:hover ul{
+    display: block;
+}
+.isi-user li{
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,.25);
+   
+}
+/* Css Nav Bar*/
+
+/*Css SIde Bar*/
+.sidebar{
+    left: 0px;
+    width: 250px;
+    height: 833px;
+    background-color: #3a3a3a;
+    display: inline-block;
+    max-width: 250px;
+}
+
+.sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: 0.4s;
+
+}
+.sidebar section{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    user-select: none;
+}
+
+ul li:hover a{
+    padding-left: 50px;
+}
+
+.sidebar ul a i{
+    margin-right: 16px;
+}
+
+ul{
+    list-style: none;
+}
+/*Css SIde Bar*/
+
+/*isi profile*/
+h2{
     justify-content: center;
     align-items: center;
-}
-.topbar{
-    background-color: #2184E0;
-    overflow: hidden;
-    border-radius: 15px;
-    height: 250px;
-}
-
-.topbar a{
-    float: right;
-    color: #fff;
+    color: #2184E0;
     text-align: center;
-    padding: 20px 26px;
-    text-decoration: none;
-    font-size: 26px;
-
 }
-
-.sidebar{
-    background-color: white;
-    color: black;
-    height: 100%;
-    margin-left: 100px;
-}
-
-.card{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-.content{
-    background-color: white;
-}
-
-.col-md-8-mt-1{
-    justify-items: center;
+.container{
+    justify-content: center;
     align-items: center;
+    width: 1400px;
+    height: 800px;
+    margin-top: -800px;
+    margin-left: 350px;
+}
+.kotak-card{
+    width: 1300px;
+    height: 500px;
+    display: flex;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+.card-1{
+    width: 1000px;
+    height: 400px;
+    background-color: #eaeaea;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0,0,0,.25);
+    border-radius: 15px;
+    margin-top: 30px;
+    gap: 50px;
+
+}
+.card-1 img{
+    width: 129px;
+    height: 191px;
+    border-radius: 10px;
     position: relative;
-    top: -470px;
-    left: 650px;
-    max-width: 700px;
-    font-size: 25px;
-    height: auto;
-
+    left: 30.5px;
+    top: 10px;
+}
+.card-1 h3{
+    font-size: 15px;
+    font-family: system-ui;
+    text-align: center;
+    margin-left: 21.75px;
+}
+h2{
+    font-size: 40px;
+    font-family: 'sora';
+}
+.tempat{
+    display: flex;
+}
+.bagian-a{
+    display: flex;
+    margin-top: 40px;
+}
+.status-profil{
+    margin-top: 50px;
+    font-size: 40px;
+}
+.email{
+    margin-top: 50px;
+    margin-left: 25px;
+    font-size: 30px;
+    font-family: 'satoshi';
+}
+.no-telp{
+    margin-top: 50px;
+    margin-left: 25px;
+    font-size: 30px;
+    font-family: 'satoshi';
+}
+.alamat{
+    margin-top: 200px;
+    margin-left: 25px;
+    font-size: 30px;
+    font-family: 'satoshi';
+}
+.bag-atas{
+    display: flex;
+    gap: 150px;
 }
 
-.logo img{
-    align-items: left;
-    justify-items: left;
-    position: relative;
-    top: 30px;
-    padding: 30px;
-    width: 850px;
-    max-height: 500px;
-    margin-left: 10px;
-
+.email input{
+    height: 35px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 25);
+    border: none;
 }
-hr{
-    color: grey;
+.no-telp input{
+    height: 35px;
+    width: 325px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 25);
+    border: none;
 }
-
-.mt-3 ul li{
-    list-style: none;
-    margin-top: 10px;
-    font-size: 20px;
+.alamat input{
+    height: 85px;
+    width: 805px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 25);
+    border: none;
 }
-
-.mt-3 ul li a{
-    color: black;
-    list-style: none;
-    text-decoration: none;
-}
-
-.col-m4-mt-1{
-    width: 220px;
+.bag-bawah{
+    margin-top: -100px;
 }
