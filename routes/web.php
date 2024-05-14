@@ -47,8 +47,8 @@ Route::resource('/detail-koleksi', \App\Http\Controllers\KoleksiController::clas
 //login
 
 Route::group(['middleware' => 'guest'], function (){
-    Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
-    Route::post('/login', [LoginController::class, 'authenticate'])->name('login');
+    Route::get('/', [LoginController::class, 'showLoginForm'])->name('login');
+    Route::post('/', [LoginController::class, 'authenticate'])->name('login');
 });
 
 Route::group(['middleware' => ['auth']], function (){

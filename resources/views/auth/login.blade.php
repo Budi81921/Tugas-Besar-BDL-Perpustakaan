@@ -37,7 +37,7 @@
                 {{-- <p class="periksa" id="popup">Periksa Kembali Password Anda</p> --}}
                 <button onclick="openPopup()">Continue</button>
                 {{-- <p> --}}
-                    <a href="#">Forgot Password</a>
+                    <a href="/admin">admin</a>
                 </p>
             </form>
         </div>
